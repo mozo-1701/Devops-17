@@ -1,0 +1,19 @@
+ 41  git clone https://github.com/mozo-1701/Devops-17.git
+   42  sudo apt install git
+   43  git clone https://github.com/mozo-1701/Devops-17.git
+   44  ls
+   45  cd Devops-17/
+   46  ls
+   47  touch sc.sh
+   48  git add sc.sh 
+   49  git commit -m "Test"
+   50  git config --global user.email "mozo1701@yh.nackademin.se"
+   51  git config --global user.name "mozo-1701"
+   52  git commit -m "Test"
+   53  git status 
+   54  git push 
+   55  history 
+
+
+https://www.cyberciti.biz/faq/howto-find-a-file-under-unix/
+http://www.bashoneliners.com/
