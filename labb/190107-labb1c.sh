@@ -6,4 +6,5 @@ do
    echo -n "$j "
    j=$(( j - 1 )) # decrease number by 1 
 done
+
 echo ""
