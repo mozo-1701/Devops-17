@@ -1,16 +1,21 @@
 #!/bin/bash
 
-DIR=/home/labb/DevOps-17/labb
+#DIR=/home/labb/DevOps-17/labb
+echo "Usage: script <directory> <file name>"
 
-if [ -d $DIR ] ; then
+if [ -d $1 ] ; then
    echo " Directory is already created" 
-   echo " Creating file1  in DIR  "
-   touch file1
+   echo " Creating file: $2  in directory: $1  "
+   touch $2
+   echo "Moving file: $2 to directory: $1"
+    mv  $2 $1
 
 else
-    echo " Trying to make DIR and file1" 
-    mkdir $DIR
-    touch file1
-    mv file1 $DIR
+    echo " Trying to make  directory $1 " 
+    mkdir $1
+    echo " Creating file $2  "
+    touch $2
+    echo "Moving file: $2 to directory: $1"
+    mv  $2 $1
 
 fi
