@@ -1,0 +1,7 @@
+/Release
+/bin
+/obj
+*.sln
+*.suo
+*.pssproj
+*.mof
