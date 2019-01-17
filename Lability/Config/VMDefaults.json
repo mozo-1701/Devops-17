@@ -1,0 +1,21 @@
+{
+	"StartupMemory": 2147483648,
+	"MinimumMemory": 536870912,
+	"MaximumMemory": 1099511627776,
+	"ProcessorCount": 1,
+    "SwitchName": "Default Switch",
+	"Media": "2012R2_x64_Standard_EN_Eval",
+    "TimeZone": "UTC",
+    "UILanguage": "en-US",
+    "SystemLocale": "en-US",
+    "InputLocale": "en-US",
+    "UserLocale": "en-US",
+    "RegisteredOwner": "Lability",
+    "RegisteredOrganization": "Virtual Engine",
+    "ClientCertificatePath": "%ALLUSERSPROFILE%\\Lability\\Certificates\\LabClient.pfx",
+    "RootCertificatePath": "%ALLUSERSPROFILE%\\Lability\\Certificates\\LabRoot.cer",
+    "BootOrder": 99,
+    "BootDelay": 0,
+    "CustomBootstrapOrder": "MediaFirst",
+    "UseNetBIOSName": false
+}
