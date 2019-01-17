@@ -1,0 +1,43 @@
+function Color-Console {
+  $Host.ui.rawui.backgroundcolor = "black"
+  $Host.ui.rawui.foregroundcolor = "green"
+  $hosttime = (Get-ChildItem -Path $pshome\PowerShell.exe).CreationTime
+  $hostversion="$($Host.Version.Major)`.$($Host.Version.Minor)"
+  $Host.UI.RawUI.WindowTitle = "PowerShell $hostversion ($hosttime)"
+  Clear-Host
+  }
+Color-Console
+
+cd \
+# SIG # Begin signature block
+# MIIFkQYJKoZIhvcNAQcCoIIFgjCCBX4CAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
+# gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUBp/n+ed7bUati0xD/B7ndaWN
+# Jk2gggMgMIIDHDCCAgSgAwIBAgIQOOqCwl3OmZ1AKMtor96rijANBgkqhkiG9w0B
+# AQsFADAmMSQwIgYDVQQDDBtNeSBDb2RlIFNpZ25pbmcgQ2VydGlmaWNhdGUwHhcN
+# MTkwMTE3MTAyMTIwWhcNMjAwMTE3MTA0MTIwWjAmMSQwIgYDVQQDDBtNeSBDb2Rl
+# IFNpZ25pbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+# AoIBAQC0J0YdnpmuMNYc/K3smWXOL7zKbShpwgdcaK5AlFq5kumOkv+SP9FuuhRM
+# BoKqT97g+wgoUWFTFffHnjqggiQObxVnskzCtoxgEN6SOonAzAKPOkAg1ZUVfuSC
+# /3sx5Zjva6aNQncCSXW7BW1Coug0Ej0U0lA8FhMpJ9P8EZGliV053biRcB5NeE0U
+# qy7sn2MICu6ltjSsIEd65ZXD0F2GYrXDIFoZ9khESI3NiVkTsXP5w07R/Y+flDWy
+# AVJYzx4CZPWrIj8OigF6OLGP/NTI1q8NTqnulB93I/p1ZTJ0eDYPka94nKn6NqsE
+# Ra0RcDh1S+hJh+481D3sOkgzryT/AgMBAAGjRjBEMA4GA1UdDwEB/wQEAwIHgDAT
+# BgNVHSUEDDAKBggrBgEFBQcDAzAdBgNVHQ4EFgQUq74yiByDJ/+nXiuPQWQMIz5n
+# PX0wDQYJKoZIhvcNAQELBQADggEBACU5JCH+VnrBFmlJf8bSXWe/XQGVErdlSdct
+# qBQbRObQSpoxYmRD3Ed3GDk+RW2Lr9Hjr8JkChQCPAq3YjueG/JazVNqZovyfueJ
+# TQOaUXxHdTMQtsbgBg6L7/EHKvT0t4GfjKIN8kYQuEPXOzGEyCXGKw32YXJ7V9DT
+# C8aN5y9A1T3fZ8RfcE5TT+koJzmDLhD99MvDOITrWiO8mwPgikTHX+VPRjucxAK9
+# vztTpbhPZqTLdSbiKD1xYJ9lkri+xGkKJqvcuQMOk1quUgWDRW0Hq5I7bMdZgfjk
+# lA4vQ1CvmGpir29lCLpCvZJqoHQ4Lt15YZSYHtJ3l37qthTaF3wxggHbMIIB1wIB
+# ATA6MCYxJDAiBgNVBAMMG015IENvZGUgU2lnbmluZyBDZXJ0aWZpY2F0ZQIQOOqC
+# wl3OmZ1AKMtor96rijAJBgUrDgMCGgUAoHgwGAYKKwYBBAGCNwIBDDEKMAigAoAA
+# oQKAADAZBgkqhkiG9w0BCQMxDAYKKwYBBAGCNwIBBDAcBgorBgEEAYI3AgELMQ4w
+# DAYKKwYBBAGCNwIBFTAjBgkqhkiG9w0BCQQxFgQUgRmyf4Pal7Rk6XJj5H4TFwyU
+# j6kwDQYJKoZIhvcNAQEBBQAEggEAH38bT3E4in18UimWF+Nnr+KEIuhlhpOwp+bc
+# gVWRtXi+mMxWPTz5heGtZFtNKHz/gN5JSWJ1T2ZOPooKzGMDlvfHf5Rc7j2HHZvD
+# Sw1Ad4psHrFL05xJ++QxJmg0nJrzs/Ypj6ha3P+GFVA4V7hSpFUUN9d97wXEPs2O
+# r8eR1fFwHPE1Ib6jNFTZ1kDrX+fTqzjqpxBEU7rauBzUU6d5m9ZwiSnVZFUmXCRP
+# pr2JdVC2v3P16+gisfvWn/ITxEl1HQ9e3l3qhzWN13fLvlgIrpjV8aOxMcjWpBDX
+# MMp48fouwAwA4hZduarSX3Z6ViahLw/Srvdwb2qXx3QSEVnlhg==
+# SIG # End signature block
