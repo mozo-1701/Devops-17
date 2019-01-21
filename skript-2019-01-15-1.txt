@@ -1,0 +1,37 @@
+﻿
+Jag kör först:
+Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force
+
+och ser att jag kan köra scriptetet som i det här fallet heter certificate.ps1.
+
+PS C:\Users\Administrator\Documents>  powershell C:\temp\certificate.ps1
+This is a certificate file.....
+
+# SIG # Begin signature block
+# MIIFkQYJKoZIhvcNAQcCoIIFgjCCBX4CAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
+.
+.
+
+
+PS C:\Users\Administrator\Documents>
+
+Sedan ändrar jag till Restricted och konstaterar att det inte går att köra scriptet!
+ 
+  Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Restricted -Force
+
+
+PS C:\Users\Administrator\Documents>  powershell C:\temp\certificate.ps1
+powershell : C:\temp\certificate.ps1 : File C:\temp\certificate.ps1 cannot be loaded because running scripts is disabled on this sys
+At line:1 char:2
++  powershell C:\temp\certificate.ps1
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\temp\certifi...led on this sys:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+tem. For more information, see about_Execution_Policies at http://go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ C:\temp\certificate.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
